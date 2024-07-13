@@ -1,59 +1,11 @@
 export const EventTimeline = () => {
   return (
-    <div className="max-w-screen-md">
+    <div className="max-w-screen-md w-full">
+      <p className="w-full text-center my-5 mb-10 sm:text-3xl text-2xl font-semibold text-gray-400">
+        Milestones in My Tech Career
+      </p>
       <ol class="relative border-s  border-gray-700">
         <li class="mb-10 ms-4">
-          <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border  border-gray-900 bg-gray-700"></div>
-          <time class="mb-1 text-sm font-normal leading-none  text-gray-500">
-            March 2020
-          </time>
-          <h3 class="text-lg font-semibold  text-white">Covid 19 Pandemic</h3>
-          <p class="mb-4 text-base font-normal text-gray-500 ">
-            When Covid started, school closed, and I didn't know what to do. I
-            played games all day for a week straight, but life felt meaningless.
-            I wanted to do something meaningful.
-          </p>
-          <a
-            href="https://www.flandersinvestmentandtrade.com/export/nieuws/coronavirus-situation-myanmar"
-            class="cursor-pointer inline-flex items-center px-4 py-2 text-sm font-medium  border  rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700   border-gray-600  focus:ring-gray-700"
-          >
-            Learn more{" "}
-            <svg
-              class="w-3 h-3 ms-2 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </a>
-        </li>
-        <li class="mb-10 ms-4">
-          <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border  border-gray-900 bg-gray-700"></div>
-          <time class="mb-1 text-sm font-normal leading-none  text-gray-500">
-            March 2023
-          </time>
-          <h3 class="text-lg font-semibold  text-white">
-            Started Learning Programming
-          </h3>
-          <p class="text-base font-normal text-gray-500 ">
-            I had an old laptop from my dad, which I used to watch Netflix.
-            Bored during the pandemic, I searched for part-time online jobs and
-            discovered programming. With nothing else to do, I dived in,
-            learning from free YouTube classes, the Mimo Code app, and
-            FreeCodeCamp, where I even earned a certificate. I also joined a
-            free web development class in my town, where I met some of the best
-            colleagues (bros) to work with.
-          </p>
-        </li>
-        <li class="ms-4">
           <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border  border-gray-900 bg-gray-700"></div>
           <time class="mb-1 text-sm font-normal leading-none  text-gray-500">
             Jan 2021
@@ -62,11 +14,11 @@ export const EventTimeline = () => {
             Founded CoolAsCode with Teammates
           </h3>
           <p class="text-base font-normal text-gray-500 ">
-            From that class, I teamed up with three other students to create a
-            website called Unit Calculator.
+            I teamed up with three other member to create a website called Unit
+            Calculator.
           </p>
         </li>
-        <li class="ms-4">
+        <li class="mb-10 ms-4">
           <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border  border-gray-900 bg-gray-700"></div>
           <time class="mb-1 text-sm font-normal leading-none  text-gray-500">
             Later 2021
@@ -75,8 +27,81 @@ export const EventTimeline = () => {
             Began First Freelance Project
           </h3>
           <p class="text-base font-normal text-gray-500 ">
-            From that class, I teamed up with three other students to create a
-            website called Unit Calculator.
+            We secured our first client, successfully transferred the website,
+            and received positive feedback from a satisfied customer.
+          </p>
+        </li>
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border  border-gray-900 bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none  text-gray-500">
+            July 2023
+          </time>
+          <h3 class="text-lg font-semibold  text-white">
+            Joined First Job as Frontend Developer
+          </h3>
+          <p class="text-base font-normal text-gray-500 ">
+            While freelancing with my team, I also landed a 9-5 job as a
+            frontend developer.
+          </p>
+        </li>
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border  border-gray-900 bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none  text-gray-500">
+            Dec 2023
+          </time>
+          <h3 class="text-lg font-semibold  text-white">Joined University</h3>
+          <p class="text-base font-normal text-gray-500 ">
+            I prioritized my academic goals and quit my job as a frontend
+            developer when it was time to attend university.
+          </p>
+        </li>
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border  border-gray-900 bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none  text-gray-500">
+            Dec 2023
+          </time>
+          <h3 class="text-lg font-semibold  text-white">
+            Won Hackathon First Prize
+          </h3>
+          <p class="text-base font-normal text-gray-500 ">
+            Before attending university, I participated in a job-matching
+            hackathon to gain experience and network. The week-long event
+            required us to work 8-5 daily on a real-world problem scenario.
+            Under the guidance of our mentor, our team developed an in-house
+            dashboard website. On the final day, we presented our work and won
+            the first prize.
+          </p>
+        </li>
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border  border-gray-900 bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none  text-gray-500">
+            Jan 2024
+          </time>
+          <h3 class="text-lg font-semibold  text-white">
+            Freelance Project with Hackathon Team Members
+          </h3>
+          <p class="text-base font-normal text-gray-500 ">
+            After the hackathon, our team, along with our mentor, got a project
+            for a monastery and meditation center. Despite charging almost
+            nothing, we took on the challenge, which involved user registration,
+            room and dormitory management, event management, and a smart card
+            system. I served as the frontend developer and designer. We
+            successfully delivered the project, and the client was very
+            satisfied.
+          </p>
+        </li>
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border  border-gray-900 bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none  text-gray-500">
+            March 2024
+          </time>
+          <h3 class="text-lg font-semibold  text-white">
+            In-House Management System with My Freelance Team(CoolAsCode)
+          </h3>
+          <p class="text-base font-normal text-gray-500 ">
+            The project included Bottle, Staff, Stock, and Customer Management
+            systems, as well as an app. I handled the frontend development for
+            the website's admin dashboard.
           </p>
         </li>
       </ol>

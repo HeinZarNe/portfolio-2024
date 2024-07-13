@@ -4,6 +4,7 @@ import { EventTimeline } from "@/components/EventTimeline";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Slogan from "@/components/Slogan";
+import TechStack from "@/components/TechStack";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         </div>
         <Slogan />
         <AboutMe />
-        <EventTimeline />
+        <EventTimeline /> <TechStack />
       </div>
     </DotBackground>
   );

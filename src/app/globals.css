@@ -33,9 +33,10 @@ body {
 } */
 
 .noise {
-  z-index: 2;
-  opacity: 0.3;
+  z-index: 0;
+  opacity: .2;
   mix-blend-mode: overlay;
+  background-image: url("/public/noise.png");
   background-position: 0 0;
   background-size: 200px;
   display: block;

@@ -5,7 +5,7 @@ const AboutMe = () => {
     <div className="flex flex-col gap-10 items-center  py-12   ">
       <div className="flex flex-col   gap-16  justify-center items-center w-full px-3 md:px-5">
         {" "}
-        <span className=" sm:text-3xl text-2xl font-semibold text-gray-600">
+        <span className="sm:text-3xl text-2xl font-semibold text-gray-400">
           About Me
         </span>
         <div className=" flex flex-row  gap-9 max-w-screen-lg ">
