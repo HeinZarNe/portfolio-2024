@@ -15,8 +15,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={classNames(roboto.className, "bg-stone-200 ")}>
-        <div className="max-w-screen-3xl mx-auto   bg-slate-50">{children}</div>
+      <body className={classNames(roboto.className, "bg-[#000] ")}>
+        <div className="max-w-screen-3xl mx-auto tracking-wide [word-spacing:3px] relative text-[#faf9f6]  bg-[#111111]">
+          <div className=" bg-noise noise" />
+          {children}
+        </div>
       </body>
     </html>
   );

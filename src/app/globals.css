@@ -31,3 +31,17 @@ body {
     text-wrap: balance;
   }
 } */
+
+.noise {
+  z-index: 2;
+  opacity: 0.3;
+  mix-blend-mode: overlay;
+  background-position: 0 0;
+  background-size: 200px;
+  display: block;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
