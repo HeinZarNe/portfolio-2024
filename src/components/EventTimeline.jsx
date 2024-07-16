@@ -1,6 +1,6 @@
 export const EventTimeline = () => {
   return (
-    <div className="max-w-screen-md w-full py-14">
+    <div className="max-w-screen-md w-full ">
       <p className="w-full text-center my-5 mb-10 sm:text-3xl text-2xl font-semibold text-gray-400">
         Milestones in My Tech Career
       </p>

@@ -3,6 +3,7 @@ import { DotBackground } from "@/components/DotBackground";
 import { EventTimeline } from "@/components/EventTimeline";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
+import KeyDetails from "@/components/KeyDetails";
 import Navbar from "@/components/Navbar";
 import ProjectsContainer from "@/components/ProjectsContainer";
 import Slogan from "@/components/Slogan";
@@ -11,13 +12,16 @@ import TechStack from "@/components/TechStack";
 export default function Home() {
   return (
     <DotBackground>
-      <div className="w-full flex flex-col items-center gap-2 sm:gap-5">
-        <div className="w-full">
-          <Navbar />
-          <HeroSection />
+      <div className="w-full flex flex-col items-center lg:gap-20 ">
+        <div className="w-full flex flex-col items-center">
+          <div className="max-w-screen-lg w-full ">
+            <Navbar />
+            <HeroSection />
+          </div>{" "}
+          <Slogan />
         </div>
-        <Slogan />
         <AboutMe />
+        <KeyDetails />
         <EventTimeline />
         <TechStack />
         <ProjectsContainer />

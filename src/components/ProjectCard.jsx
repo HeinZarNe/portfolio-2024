@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 const ProjectCard = ({
   title,
   subTitle,
@@ -12,7 +14,10 @@ const ProjectCard = ({
   link,
 }) => {
   return (
-    <div className="flex flex-col gap-3 max-w-[800px] w-full relative border-[#171717] border-2 bg-[#0f0f10] box-shadow   p-7 rounded-xl">
+    <motion.div
+      whileHover={{ rotate: "1deg" }}
+      className="flex flex-col gap-3 max-w-[800px] w-full relative border-[#171717] border-2 bg-[#0f0f10] box-shadow   p-7 rounded-xl"
+    >
       <div className="flex flex-row gap-3 items-end w-full ">
         <div className="flex-1 flex flex-col gap-4">
           <div className="flex flex-col gap-1">
@@ -73,7 +78,7 @@ const ProjectCard = ({
       <div className="flex-1 ">
         <p className="text-gray-100">{desc}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

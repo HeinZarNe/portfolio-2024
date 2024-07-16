@@ -9,7 +9,7 @@ const TechStack = () => {
   const inView = useInView(ref, { once: true });
 
   return (
-    <div className="w-full relative flex flex-col gap-10 items-center justify-center box-shadow rounded-lg py-28 border-[#171718] border-2 bg-[#0f0f10]">
+    <div className="w-full relative flex flex-col gap-12 items-center justify-center box-shadow rounded-lg py-28 border-[#171718] border-2 bg-[#0f0f10]">
       <div className="absolute w-full h-full top-0 left-0">
         <SparklesCore
           id="tsparticlesfullpage"

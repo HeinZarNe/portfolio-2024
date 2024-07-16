@@ -59,7 +59,7 @@ const ProjectsContainer = () => {
       time: "1 weeks",
       feature: "3+",
       desc: "This fully responsive project was created to practice state management in React and to design a beautiful, real-world e-commerce layout. The result is a single-page application that showcases advanced state management techniques and a polished user interface.",
-      img: "/projects/dictionary.png",
+      img: "/projects/shop.png",
       link: {
         title: "https://ecommerce-by-zarne.netlify.app/",
         subTitle:
@@ -69,7 +69,7 @@ const ProjectsContainer = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-10 items-center justify-center py-14">
+    <div className="flex flex-col gap-14 items-center justify-center ">
       <div>
         <p className="sm:text-3xl text-2xl font-semibold text-gray-400 text-center">
           Projects
