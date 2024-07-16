@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={classNames(roboto.className, "bg-[#000] ")}>
         <div className="max-w-screen-3xl mx-auto tracking-wide [word-spacing:3px] relative text-[#faf9f6]  bg-[#111111]">
-          <div className="  noise" />
+          <div className=" w-full " />
           {children}
         </div>
       </body>

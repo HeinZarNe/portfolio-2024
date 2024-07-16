@@ -1,8 +1,10 @@
 import AboutMe from "@/components/AboutMe";
 import { DotBackground } from "@/components/DotBackground";
 import { EventTimeline } from "@/components/EventTimeline";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import ProjectsContainer from "@/components/ProjectsContainer";
 import Slogan from "@/components/Slogan";
 import TechStack from "@/components/TechStack";
 
@@ -16,7 +18,10 @@ export default function Home() {
         </div>
         <Slogan />
         <AboutMe />
-        <EventTimeline /> <TechStack />
+        <EventTimeline />
+        <TechStack />
+        <ProjectsContainer />
+        <Footer />
       </div>
     </DotBackground>
   );
