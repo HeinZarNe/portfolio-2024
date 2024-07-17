@@ -69,12 +69,12 @@ const ProjectsContainer = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-14 items-center justify-center ">
-      <div>
+    <div className="w-full flex flex-col gap-7 sm:gap-10 items-center justify-center px-5">
+      <div className="max-w-screen-md">
         <p className="sm:text-3xl text-2xl font-semibold text-gray-400 text-center">
           Projects
         </p>
-        <p className="sm:text-xl text-lg font-semibold text-gray-600 text-center mt-2">
+        <p className="sm:text-xl text-lg font-semibold text-gray-600 sm:text-center mt-2">
           These are some of the projects I want to highlight, although I have
           completed several others as well.
         </p>

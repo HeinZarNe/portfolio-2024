@@ -16,15 +16,16 @@ const ProjectCard = ({
   return (
     <motion.div
       whileHover={{ rotate: "1deg" }}
-      className="flex flex-col gap-3 max-w-[800px] w-full relative border-[#171717] border-2 bg-[#0f0f10] box-shadow   p-7 rounded-xl"
+      key="title"
+      className="flex  flex-col gap-3 max-w-[800px] w-full relative border-[#171717] border-2 bg-[#0f0f10] box-shadow  p-2 sm:p-7 rounded-xl"
     >
-      <div className="flex flex-row gap-3 items-end w-full ">
-        <div className="flex-1 flex flex-col gap-4">
-          <div className="flex flex-col gap-1">
+      <div className="flex md:flex-row flex-col-reverse items-start gap-3 md:items-end w-full ">
+        <div className="flex-1 flex flex-col gap-4 w-full">
+          <div className="flex flex-col gap-1 ">
             <a href={link.title} target="blank">
               <span
                 className={cn(
-                  "sm:text-3xl text-2xl font-semibold text-[#fdfdfd] flex flex-row items-center gap-2 ",
+                  "sm:text-3xl text-lg  font-semibold text-[#fdfdfd] flex flex-row items-center gap-2 ",
                   link.title ? "hover:underline  cursor-pointer" : ""
                 )}
               >
@@ -35,7 +36,7 @@ const ProjectCard = ({
             <a href={link.subTitle} target="blank">
               <span
                 className={cn(
-                  "sm:text-xl text-lg font-semibold text-gray-400 flex flex-row items-center gap-2 ",
+                  "sm:text-xl text-base  font-semibold text-gray-400 flex flex-row items-center gap-2 ",
                   link.subTitle ? "hover:underline  cursor-pointer" : ""
                 )}
               >
@@ -46,20 +47,20 @@ const ProjectCard = ({
               </span>
             </a>
           </div>
-          <div className="flex flex-row gap-2 items-center text-black text-center">
-            <div className="bg-gold p-2  rounded-lg flex flex-col items-center gap-2">
+          <div className="flex flex-row gap-2 items-center text-black text-center flex-wrap">
+            <div className="bg-gold p-2  rounded-lg flex flex-col items-center gap-2 min-w-fit flex-1">
               <span className="text-xl font-bold">{member}</span>
               <span className="font-bold text-[#161616] text-sm  ">
                 Team Members
               </span>
             </div>
-            <div className="bg-gold  p-2  rounded-lg flex flex-col items-center gap-2">
+            <div className="bg-gold  p-2  rounded-lg flex flex-col items-center gap-2  min-w-fit flex-1">
               <span className="text-xl font-bold">{time}</span>
               <span className="font-bold text-[#161616] text-sm  ">
                 Total Time Taken
               </span>
             </div>
-            <div className="bg-gold  p-2  rounded-lg flex flex-col items-center gap-2">
+            <div className="bg-gold  p-2  rounded-lg flex flex-col items-center gap-2  min-w-fit flex-1">
               <span className="text-xl font-bold">{feature}</span>
               <span className="font-bold text-[#161616] text-sm  ">
                 Main Features
@@ -67,7 +68,7 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
-        <div className="sm:w-[350px] ">
+        <div className="md:w-[350px] w-full ">
           <img
             src={img}
             alt="Project Screenshot"

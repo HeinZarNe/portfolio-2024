@@ -12,7 +12,7 @@ import TechStack from "@/components/TechStack";
 export default function Home() {
   return (
     <DotBackground>
-      <div className="w-full flex flex-col items-center lg:gap-20 ">
+      <div className="w-full flex flex-col items-center lg:gap-20 sm:gap-16 gap-12 ">
         <div className="w-full flex flex-col items-center">
           <div className="max-w-screen-lg w-full ">
             <Navbar />

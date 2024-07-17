@@ -2,19 +2,19 @@ import React from "react";
 // w-full aspect-[1052/346]
 const AboutMe = () => {
   return (
-    <div className="flex flex-col gap-10 items-center">
-      <div className="flex flex-col   gap-16  justify-center items-center w-full px-3 md:px-5">
+    <div className="flex w-full items-center">
+      <div className="flex flex-col gap-5   md:gap-16 sm:gap-10  justify-center items-center w-full  px-4 sm:px-5">
         {" "}
         <span className="sm:text-3xl text-2xl font-semibold text-gray-400">
           About Me
         </span>
-        <div className=" flex flex-row  gap-9 max-w-screen-lg ">
+        <div className=" w-full flex flex-row justify-center  gap-9 max-w-screen-lg flex-wrap ">
           <div className=" bg-gray-900 p-[4px] h-fit rounded-2xl border border-gray-600 ">
-            <div className="w-[400px] aspect-[964/1280]  relative rounded-2xl">
+            <div className="max-w-[300px] md:min-w-[400px] flex-1 aspect-[964/1280]  relative rounded-2xl">
               <img src="/fullbody.jpg" className="w-full rounded-2xl" />
             </div>
           </div>
-          <p className=" flex-1 text-base  ">
+          <p className=" flex-1 text-base w-full sm:min-w-[300px] ">
             I am a first-year student at the University of Computer Studies,
             Yangon (UCSY), with a deep passion for web development. Since 2019,
             I have pursued this passion through academic studies and extensive
@@ -31,13 +31,13 @@ const AboutMe = () => {
             to the web development field.
           </p>
         </div>
-        <div className=" flex flex-row-reverse  gap-9 max-w-screen-lg ">
+        <div className="w-full  flex flex-row-reverse flex-wrap justify-center  gap-9 max-w-screen-lg ">
           <div className=" bg-gray-900 p-[4px] h-fit rounded-2xl border border-gray-600 ">
-            <div className="w-[400px] aspect-[1280/960]  relative rounded-2xl">
+            <div className="max-w-[300px] md:min-w-[400px] flex-1 aspect-[1280/960]  relative rounded-2xl">
               <img src="/hackathon-gp.jpg" className="w-full rounded-2xl" />
             </div>
           </div>
-          <p className=" flex-1 text-base  ">
+          <p className=" flex-1 text-base  w-full sm:min-w-[300px] ">
             I discovered the hackathon on Facebook and submitted my application
             with my projects and experiences, not expecting much. To my
             surprise, I was chosen for an interview. Despite English not being
@@ -50,7 +50,6 @@ const AboutMe = () => {
             from our mentor, which I will discuss in the projects section.
           </p>
         </div>{" "}
-       
       </div>
     </div>
   );
