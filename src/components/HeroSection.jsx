@@ -10,7 +10,7 @@ const HeroSection = () => {
       {/* <div className="absolute top-0 left-0 bg-jigsaw-pattern bg-no-repeat  bg-center w-full z-10 h-full opacity-35" /> */}
       <div className="flex flex-col items-start tracking-wide justify-center md:gap-3 sm:gap-0 sm:text-[30px] text-[27px]  md:text-[40px] md:leading-6 ">
         <div className="flex flex-row items-baseline gap-x-3 gap-y-0 leading-8 sm:gap-4 sm:justify-center flex-wrap justify-start">
-          <span>I'm </span>
+          <span>I&apos;m </span>
           <span className=" font-bold text-gold ">Hein Zar Ne</span>
         </div>
         <div className="flex flex-row items-baseline flex-wrap gap-3 justify-center  text-left sm">

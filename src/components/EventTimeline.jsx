@@ -103,7 +103,7 @@ export const EventTimeline = () => {
           <p className="text-base font-normal text-gray-500 ">
             The project included Bottle, Staff, Stock, and Customer Management
             systems, as well as an app. I handled the frontend development for
-            the website's admin dashboard.
+            the website&apos;s admin dashboard.
           </p>
         </li>
       </ol>
