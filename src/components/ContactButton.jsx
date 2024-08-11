@@ -62,7 +62,7 @@ const ContactButton = ({ center }) => {
               exit={{ opacity: 0, y: "100px" }}
               transition={{ duration: 0.3, ease: "easeOut" }}
             >
-              <IconContainer>
+              <IconContainer link={"https://www.facebook.com/LORD.x.25/"}>
                 <FacebookIcon />
               </IconContainer>
             </motion.div>

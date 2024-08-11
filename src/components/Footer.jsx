@@ -31,7 +31,7 @@ const Footer = () => {
         </a>
         <a
           target="blank"
-          href=""
+          href="https://www.facebook.com/LORD.x.25/"
           className="hover:translate-y-[-8px] duration-[0.3s] ease-out transition-all py-3 hover:text-gold"
         >
           Facebook
