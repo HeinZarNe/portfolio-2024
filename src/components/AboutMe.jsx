@@ -2,14 +2,13 @@ import React from "react";
 // w-full aspect-[1052/346]
 const AboutMe = () => {
   return (
-    <div className="flex w-full items-center">
+    <div className="flex w-full items-center py-10" id="about">
       <div className="flex flex-col gap-5   md:gap-16 sm:gap-10  justify-center items-center w-full  px-4 sm:px-5">
-        {" "}
         <span className="sm:text-3xl text-2xl font-semibold text-gray-400">
           About Me
         </span>
-        <div className=" w-full flex flex-row justify-center  gap-9 max-w-screen-lg flex-wrap ">
-          <div className=" bg-gray-900 p-[4px] h-fit rounded-2xl border border-gray-600 ">
+        <div className=" w-full flex md:flex-row flex-col items-center md:items-start   gap-9 max-w-screen-lg flex-wrap ">
+          <div className=" bg-gray-900 p-[4px] h-fit w-fit rounded-2xl border border-gray-600 mx-auto my-0 ">
             <div className="max-w-[300px] md:min-w-[400px] flex-1 aspect-[964/1280]  relative rounded-2xl">
               <img src="/fullbody.jpg" className="w-full rounded-2xl" />
             </div>
@@ -49,7 +48,7 @@ const AboutMe = () => {
             prize. After the event, our team received another software project
             from our mentor, which I will discuss in the projects section.
           </p>
-        </div>{" "}
+        </div>
       </div>
     </div>
   );

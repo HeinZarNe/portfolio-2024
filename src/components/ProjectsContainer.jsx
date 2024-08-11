@@ -69,7 +69,10 @@ const ProjectsContainer = () => {
   ];
 
   return (
-    <div className="w-full flex flex-col gap-7 sm:gap-10 items-center justify-center px-5">
+    <div
+      className="w-full flex flex-col gap-7 sm:gap-10 items-center justify-center px-5 py-10"
+      id="projects"
+    >
       <div className="max-w-screen-md">
         <p className="sm:text-3xl text-2xl font-semibold text-gray-400 text-center">
           Projects
@@ -81,6 +84,7 @@ const ProjectsContainer = () => {
       </div>
       {data?.map((item) => (
         <ProjectCard
+          key={item.title}
           title={item.title}
           subTitle={item.subTitle}
           member={item.member}

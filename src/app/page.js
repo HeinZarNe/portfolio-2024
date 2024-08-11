@@ -1,4 +1,5 @@
 import AboutMe from "@/components/AboutMe";
+import ContactSection from "@/components/ContactSection";
 import { DotBackground } from "@/components/DotBackground";
 import { EventTimeline } from "@/components/EventTimeline";
 import Footer from "@/components/Footer";
@@ -12,12 +13,12 @@ import TechStack from "@/components/TechStack";
 export default function Home() {
   return (
     <DotBackground>
-      <div className="w-full flex flex-col items-center lg:gap-20 sm:gap-16 gap-12 ">
+      <div className="w-full flex flex-col items-center ">
         <div className="w-full flex flex-col items-center">
           <div className="max-w-screen-lg w-full ">
             <Navbar />
             <HeroSection />
-          </div>{" "}
+          </div>
           <Slogan />
         </div>
         <AboutMe />
@@ -25,6 +26,7 @@ export default function Home() {
         <EventTimeline />
         <TechStack />
         <ProjectsContainer />
+        <ContactSection />
         <Footer />
       </div>
     </DotBackground>

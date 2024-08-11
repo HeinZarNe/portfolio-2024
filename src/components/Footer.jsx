@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="flex-1 py-3">
         <p className="font-thin text-stone-500">Last Updated 7/2024</p>
       </div>
-      <div className="flex flex-row gap-3 text-gray-600 flex-wrap">
+      <div className="flex flex-row gap-5 text-gray-400 flex-wrap">
         <a
           target="blank"
           href="mailto:heinzarne226@gmail.com"

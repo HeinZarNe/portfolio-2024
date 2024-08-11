@@ -1,6 +1,5 @@
 "use client";
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Container, SingleOrMultiple } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
@@ -18,6 +17,7 @@ type ParticlesProps = {
   particleColor?: string;
   particleDensity?: number;
 };
+
 export const SparklesCore = (props: ParticlesProps) => {
   const {
     id,
@@ -29,7 +29,10 @@ export const SparklesCore = (props: ParticlesProps) => {
     particleColor,
     particleDensity,
   } = props;
+
   const [init, setInit] = useState(false);
+  const controls = useAnimation();
+
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
@@ -37,11 +40,9 @@ export const SparklesCore = (props: ParticlesProps) => {
       setInit(true);
     });
   }, []);
-  const controls = useAnimation();
 
   const particlesLoaded = async (container?: Container) => {
     if (container) {
-      console.log(container);
       controls.start({
         opacity: 1,
         transition: {
@@ -68,7 +69,6 @@ export const SparklesCore = (props: ParticlesProps) => {
               enable: false,
               zIndex: 1,
             },
-
             fpsLimit: 120,
             interactivity: {
               events: {
@@ -401,11 +401,11 @@ export const SparklesCore = (props: ParticlesProps) => {
                 distance: 100,
                 enable: false,
                 frequency: 1,
-                opacity: 1,
+                opacity: 0.4,
                 shadow: {
                   blur: 5,
                   color: {
-                    value: "#000",
+                    value: "#00ff00",
                   },
                   enable: false,
                 },
@@ -416,19 +416,16 @@ export const SparklesCore = (props: ParticlesProps) => {
                 width: 1,
                 warp: false,
               },
-              repulse: {
-                value: 0,
-                enabled: false,
-                distance: 1,
-                duration: 1,
-                factor: 1,
-                speed: 1,
-              },
             },
-            detectRetina: true,
+            pauseOnBlur: true,
+            pauseOnOutsideViewport: true,
+            themes: [],
+            zLayers: 100,
           }}
         />
       )}
     </motion.div>
   );
 };
+
+export default SparklesCore;

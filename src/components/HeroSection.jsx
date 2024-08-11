@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import HoverBorderGradient from "@/components/ui/hover-border-gradient.jsx";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
+import ContactButton from "./ContactButton";
 
 const HeroSection = () => {
   return (
@@ -18,15 +19,7 @@ const HeroSection = () => {
           </span>
         </div>
         <div className="flex flex-row items-center gap-2 sm:gap-3 md:gap-5  mt-3 md:mt-0">
-          <HoverBorderGradient
-            containerClassName="rounded-full"
-            as="button"
-            className="bg-black text-gold flex items-center px-3 py-2 sm:space-x-2"
-          >
-            <div className="text-base sm:text-lg tracking-widest font-semibold text-gold   rounded-md">
-              Contact Me
-            </div>
-          </HoverBorderGradient>
+          <ContactButton />{" "}
           <a
             href={"https://flowcv.com/resume/fwc7mal4dv"}
             target="blank"
