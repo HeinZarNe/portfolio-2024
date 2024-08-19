@@ -4,6 +4,16 @@ import ProjectCard from "./ProjectCard";
 const ProjectsContainer = () => {
   const data = [
     {
+      title: "Cafe Point",
+      subTitle: "Own Project",
+      member: 1,
+      time: "1 week",
+      feature: "5+",
+      desc: "CafePoint is a web application designed to help users discover cafes in their town. The current version is frontend-focused, displaying cafes with filtering options based on township, budget, and other criteria. Users can also save their favorite cafes, although the login and sign-up features are currently only for demonstration. The project is in progress, with backend development planned for future updates.",
+      img: "/projects/cafe-point.png",
+      link: { title: "https://cafe-point.vercel.app",subTitle:"" },
+    },
+    {
       title: "Monastery Management System",
       subTitle: "Client Project",
       member: 6,
